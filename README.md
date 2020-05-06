@@ -9,7 +9,7 @@ Normal usage:
 Relative destination usage:
 
 `MoveMouse(100,200,"RD")`
-;-----------------------------------------------------------------
+
 
 `xs:` starting mouse position's X coordinate
 
