@@ -36,6 +36,4 @@ MoveMouse(100,200,"RD")
 `targetArea:` when close to destination, it reduces speed, the bigger value, the bigger area
 
 
-```autohotkey
-WindMouse(xs, ys, xe, ye, gravity, wind, minWait, maxWait, maxStep, targetArea)
-````
+`WindMouse(xs, ys, xe, ye, gravity, wind, minWait, maxWait, maxStep, targetArea)`
