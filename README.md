@@ -4,15 +4,11 @@ Make sure you do `#include WindHumanMouse.ahk` in your script and put it in same
 
 Normal usage:
 
-```autohotkey
-MoveMouse(100,200)
-```
+```autohotkey MoveMouse(100,200)```
 
 Relative destination usage:
 
-```autohotkey
-MoveMouse(100,200,"RD")
-```
+```autohotkey MoveMouse(100,200,"RD")```
 
 
 `xs:` starting mouse position's X coordinate
