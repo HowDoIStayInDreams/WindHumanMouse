@@ -28,7 +28,7 @@ MoveMouse(x, y, RD:= ""){
     ;                      ;---------------------------------------------------------;
     if(RD == "RD"){
         MouseGetPos, xpos, ypos
-        distance:= (Sqrt(Hypot((xpos+abs(x))-xpos,(ypos+abs(y))-ypos)))*0.7
+        distance:= (Sqrt(Hypot((xpos+abs(x))-xpos,(ypos+abs(y))-ypos)))*0.65
         dynamicSpeed:= (1/distance)*100
         Random, finalSpeed, dynamicSpeed, dynamicSpeed + 1
         stepArea:= Max(( finalSpeed / 2 + distance ) / 10, 0.1)
@@ -36,7 +36,7 @@ MoveMouse(x, y, RD:= ""){
     }
     else{
         MouseGetPos, xpos, ypos
-        distance:= (Sqrt(Hypot(x-xpos,y-ypos)))*0.7
+        distance:= (Sqrt(Hypot(x-xpos,y-ypos)))*0.65
         dynamicSpeed:= (1/distance)*100
         Random, finalSpeed, dynamicSpeed, dynamicSpeed + 1
         stepArea:= Max(( finalSpeed / 2 + distance ) / 10, 0.1)
