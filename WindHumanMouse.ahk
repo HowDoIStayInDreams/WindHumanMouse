@@ -7,7 +7,6 @@ SetBatchLines, -1
 SetMouseDelay -1
 ;*************************************************************************************
 
-
 ;------------------------------------------------------------------------------------;
 ;  Original script by: Flight in Pascal, link: https://paste.villavu.com/show/3279/  ;
 ;  Modified script with simpler method MoveMouse() by: dexon in C#                   ;
@@ -15,7 +14,6 @@ SetMouseDelay -1
 ;  Dynamic mouse speed implemented by: HowDoIStayInDreams                            ;
 ;  v1.2                                                                              ;
 ;------------------------------------------------------------------------------------;
-
 
 MoveMouse(x, y, RD:= ""){
    ;---------------------------------------------------------------------------------;
