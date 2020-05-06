@@ -30,4 +30,5 @@ Relative destination usage:
 
 `targetArea:` when close to destination, it reduces speed, the bigger value, the bigger area
 
+
 `WindMouse(xs, ys, xe, ye, gravity, wind, minWait, maxWait, maxStep, targetArea)`
