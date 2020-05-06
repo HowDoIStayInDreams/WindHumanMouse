@@ -19,7 +19,7 @@ MoveMouse(x, y, RD:= ""){
    ; go to https://www.random.org/ and generate two numbers between 0 and 1000000000 ;
    ;---------------------------------------------------------------------------------;
     Random, seed, 20737032, 786288360
-	Random, , seed
+    Random, , seed
                            ;---------------------------------------------------------;
     ;Random, rxRan,-10,10  ; here you can randomize your destination coordinates     ;
     ;Random, ryRan,-10,10  ; so you don't need to randomize them in your main script ;
