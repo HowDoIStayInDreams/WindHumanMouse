@@ -6,7 +6,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
 SetMouseDelay -1
 ;*************************************************************************************
-
 ;------------------------------------------------------------------------------------;
 ;  Original script by: Flight in Pascal, link: https://paste.villavu.com/show/3279/  ;
 ;  Modified script with simpler method MoveMouse() by: dexon in C#                   ;
@@ -14,7 +13,6 @@ SetMouseDelay -1
 ;  Dynamic mouse speed implemented by: HowDoIStayInDreams                            ;
 ;  v1.2                                                                              ;
 ;------------------------------------------------------------------------------------;
-
 MoveMouse(x, y, RD:= ""){
    ;---------------------------------------------------------------------------------;
    ; type here two numbers between 0 and 4294967295, or, better,                     ;
@@ -45,9 +43,7 @@ MoveMouse(x, y, RD:= ""){
         WindMouse(xpos,ypos,x,y,9,3,finalSpeed,finalSpeed*1.3,10*stepArea,10*stepArea)
     }
 }
-
 ;----------------------- no need to change anything below --------------------------;
-
 WindMouse(xs, ys, xe, ye, gravity, wind, minWait, maxWait, maxStep, targetArea){
     windX:= 0, windY:= 0
     veloX:= 0, veloY:= 0
