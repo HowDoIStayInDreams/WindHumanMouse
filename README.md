@@ -11,6 +11,7 @@ Relative destination usage:
 `MoveMouse(100,200,"RD")`
 
 xs: starting mouse position's X coordinate
+
 ys: starting mouse position's Y coordinate
 xe: ending mouse position's X coordinate
 ye: ending mouse position's Y coordinate
