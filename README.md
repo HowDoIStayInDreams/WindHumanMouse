@@ -10,10 +10,9 @@ Relative destination usage:
 
 `MoveMouse(100,200,"RD")`
 
-####xs: starting mouse position's X coordinate
-
-ys: starting mouse position's Y coordinate
-xe: ending mouse position's X coordinate
+**xs:** starting mouse position's X coordinate
+**ys:** starting mouse position's Y coordinate
+**xe:** ending mouse position's X coordinate
 ye: ending mouse position's Y coordinate
 gravity: the bigger gravity, the straighter mouse move
 wind: how "windy" is the mouse move, bigger value, more windy
