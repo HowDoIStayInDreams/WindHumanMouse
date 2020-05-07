@@ -2,7 +2,7 @@
 
 `#include WindHumanMouse.ahk` always include this in your script and put it in same directory
 
-* Normal usage:
+* Normal usage
 
 ```autohotkey
 MoveMouse(100, 200)
@@ -10,7 +10,7 @@ MoveMouse(100, 200, 0.55)        0.55 here is optional speed parameter. Default 
                                  from 0.5 (slow) to 0.7 (fast)
 ```
 
-* Relative destination usage:
+* Relative destination usage
 
 ```autohotkey
 MoveMouse(100, 200,, "RD")
