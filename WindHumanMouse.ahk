@@ -15,7 +15,7 @@ SetMouseDelay -1
 ;------------------------------------------------------------------------------------;
 MoveMouse(x, y, speed:= 0.60, RD:= ""){
    ;---------------------------------------------------------------------------------;
-   ; for parameter seed, type two numbers between 0 and 4294967295, or, better,      ;
+   ; for variable seed, type two numbers between 0 and 4294967295, or, better,       ;
    ; go to https://www.random.org/ and generate two numbers between 0 and 1000000000 ;
    ;---------------------------------------------------------------------------------;
     Random, seed, 15174169, 990630352
