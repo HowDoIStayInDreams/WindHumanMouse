@@ -6,12 +6,14 @@ Normal usage:
 
 ```autohotkey
 MoveMouse(100,200)
+MoveMouse(100,200,0.65)
 ```
 
 Relative destination usage:
 
 ```autohotkey
-MoveMouse(100,200,"RD")
+MoveMouse(100,200,,"RD")
+MoveMouse(100,200,0.65,"RD")
 ```
 
 
