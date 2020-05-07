@@ -11,9 +11,9 @@ SetMouseDelay -1
 ;  Modified script with simpler method MoveMouse() by: dexon in C#                   ;
 ;  Convertion from C# into AHK by: HowDoIStayInDreams, with the help of Arekusei     ;
 ;  Dynamic mouse speed implemented by: HowDoIStayInDreams                            ;
-;  v1.2                                                                              ;
+;  v1.3                                                                              ;
 ;------------------------------------------------------------------------------------;
-MoveMouse(x, y, speed:= 0.60, RD:= ""){
+MoveMouse(x, y, speed:= 0.6, RD:= ""){
    ;---------------------------------------------------------------------------------;
    ; for variable seed, type two numbers between 0 and 4294967295, or, better,       ;
    ; go to https://www.random.org/ and generate two numbers between 0 and 1000000000 ;
@@ -32,7 +32,7 @@ MoveMouse(x, y, speed:= 0.60, RD:= ""){
         dynamicSpeed:= (1/distance)*100
         Random, finalSpeed, dynamicSpeed, dynamicSpeed + 0.8
         stepArea:= Max(( finalSpeed / 2 + distance ) / 10, 0.1)
-        WindMouse(xpos, ypos, xpos+x, ypos+y, 9, 3, finalSpeed, finalSpeed * 1.3, stepArea * 11, stepArea * 12)
+        WindMouse(xpos, ypos, xpos+x, ypos+y, 9, 3, finalSpeed, finalSpeed * 1.2, stepArea * 11, stepArea * 13)
     }
     else{
         MouseGetPos, xpos, ypos
@@ -40,7 +40,7 @@ MoveMouse(x, y, speed:= 0.60, RD:= ""){
         dynamicSpeed:= (1/distance)*100
         Random, finalSpeed, dynamicSpeed, dynamicSpeed + 0.8
         stepArea:= Max(( finalSpeed / 2 + distance ) / 10, 0.1)
-        WindMouse(xpos, ypos, x, y, 9, 3, finalSpeed, finalSpeed * 1.3, stepArea * 11, stepArea * 12)
+        WindMouse(xpos, ypos, x, y, 9, 3, finalSpeed, finalSpeed * 1.2, stepArea * 11, stepArea * 13)
     }
 }
 ;----------------------- no need to change anything below --------------------------;
