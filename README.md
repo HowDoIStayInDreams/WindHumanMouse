@@ -5,15 +5,17 @@ Make sure you do `#include WindHumanMouse.ahk` in your script and put it in same
 Normal usage:
 
 ```autohotkey
-MoveMouse(100,200)
-MoveMouse(100,200,0.65)
+MoveMouse(100, 200)
+MoveMouse(100, 200, 0.65)        0.65 here is optional speed parameter. Default value:= 0.6
+                                 from 0.5 (slow) to 0.7 (fast)
 ```
 
 Relative destination usage:
 
 ```autohotkey
-MoveMouse(100,200,,"RD")
-MoveMouse(100,200,0.65,"RD")
+MoveMouse(100, 200,, "RD")
+MoveMouse(100, 200, 0.65, "RD")  0.65 here is optional speed parameter. Default value:= 0.6
+                                 from 0.5 (slow) to 0.7 (fast)
 ```
 
 
