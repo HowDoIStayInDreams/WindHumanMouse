@@ -1,6 +1,6 @@
 # WindHumanMouse
 
-`#include WindHumanMouse.ahk` always include this in your script and put it in same directory
+`#include WindHumanMouse.ahk` always include this in your script and put it in the same directory
 
 * Normal usage
 
