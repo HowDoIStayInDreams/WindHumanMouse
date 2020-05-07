@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -13,12 +13,12 @@ SetMouseDelay -1
 ;  Dynamic mouse speed implemented by: HowDoIStayInDreams                            ;
 ;  v1.2                                                                              ;
 ;------------------------------------------------------------------------------------;
-MoveMouse(x, y, RD:= ""){
+MoveMouse(x, y, speed:= 0.60, RD:= ""){
    ;---------------------------------------------------------------------------------;
    ; type here two numbers between 0 and 4294967295, or, better,                     ;
    ; go to https://www.random.org/ and generate two numbers between 0 and 1000000000 ;
    ;---------------------------------------------------------------------------------;
-    Random, seed, 20737032, 786288360
+    Random, seed, 15174169, 990630352
     Random, , seed
                            ;---------------------------------------------------------;
     ;Random, rxRan,-10,10  ; here you can randomize your destination coordinates     ;
@@ -28,20 +28,20 @@ MoveMouse(x, y, RD:= ""){
     ;                      ;---------------------------------------------------------;
     if(RD == "RD"){
         MouseGetPos, xpos, ypos
-        distance:= (Sqrt(Hypot((xpos+abs(x))-xpos,(ypos+abs(y))-ypos)))*0.65
+        distance:= (Sqrt(Hypot((xpos+abs(x))-xpos,(ypos+abs(y))-ypos)))*speed
         dynamicSpeed:= (1/distance)*100
-        Random, finalSpeed, dynamicSpeed, dynamicSpeed + 1
+        Random, finalSpeed, dynamicSpeed, dynamicSpeed + 0.8
         stepArea:= Max(( finalSpeed / 2 + distance ) / 10, 0.1)
-        WindMouse(xpos,ypos,xpos+x,ypos+y,9,3,finalSpeed,finalSpeed*1.3,10*stepArea,10*stepArea)
+        WindMouse(xpos, ypos, xpos+x, ypos+y, 9, 3, finalSpeed, finalSpeed*1.3, stepArea * 11, stepArea * 10)
     }
     else{
         MouseGetPos, xpos, ypos
-        distance:= (Sqrt(Hypot(x-xpos,y-ypos)))*0.65
+        distance:= (Sqrt(Hypot(x-xpos,y-ypos)))*speed
         dynamicSpeed:= (1/distance)*100
-        Random, finalSpeed, dynamicSpeed, dynamicSpeed + 1
+        Random, finalSpeed, dynamicSpeed, dynamicSpeed + 0.8
         stepArea:= Max(( finalSpeed / 2 + distance ) / 10, 0.1)
-        WindMouse(xpos,ypos,x,y,9,3,finalSpeed,finalSpeed*1.3,10*stepArea,10*stepArea)
-    }
+        WindMouse(xpos, ypos, x, y, 9, 3, finalSpeed, finalSpeed * 1.3, stepArea * 11, stepArea * 10)
+    }    
 }
 ;----------------------- no need to change anything below --------------------------;
 WindMouse(xs, ys, xe, ye, gravity, wind, minWait, maxWait, maxStep, targetArea){
