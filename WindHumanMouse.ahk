@@ -32,7 +32,7 @@ MoveMouse(x, y, speed:= 0.6, RD:= ""){
         dynamicSpeed:= (1/distance)*100
         Random, finalSpeed, dynamicSpeed, dynamicSpeed + 0.8
         stepArea:= Max(( finalSpeed / 2 + distance ) / 10, 0.1)
-        WindMouse(xpos, ypos, xpos+x, ypos+y, 9, 3, finalSpeed, finalSpeed * 1.2, stepArea * 11, stepArea * 13)
+        WindMouse(xpos, ypos, xpos+x, ypos+y, 9, 3, finalSpeed, finalSpeed * 1.1, stepArea * 11, stepArea * 13)
     }
     else{
         MouseGetPos, xpos, ypos
@@ -40,7 +40,7 @@ MoveMouse(x, y, speed:= 0.6, RD:= ""){
         dynamicSpeed:= (1/distance)*100
         Random, finalSpeed, dynamicSpeed, dynamicSpeed + 0.8
         stepArea:= Max(( finalSpeed / 2 + distance ) / 10, 0.1)
-        WindMouse(xpos, ypos, x, y, 9, 3, finalSpeed, finalSpeed * 1.2, stepArea * 11, stepArea * 13)
+        WindMouse(xpos, ypos, x, y, 9, 3, finalSpeed, finalSpeed * 1.1, stepArea * 11, stepArea * 13)
     }
 }
 ;----------------------- no need to change anything below --------------------------;
