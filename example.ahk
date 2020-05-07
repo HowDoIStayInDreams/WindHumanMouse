@@ -6,10 +6,10 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 F12::
 MoveMouse(-100, 100,, "RD")
-;MoveMouse(-100, 100, 0.62, "RD")
+;MoveMouse(-100, 100, 0.55, "RD")
 Return
 
 F11::
 MoveMouse(600, 400)
-;MoveMouse(600, 400, 0.62)
+;MoveMouse(600, 400, 0.55)
 Return
