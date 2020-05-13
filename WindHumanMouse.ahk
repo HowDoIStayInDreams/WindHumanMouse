@@ -89,8 +89,7 @@ WindMouse(xs, ys, xe, ye, gravity, wind, minWait, maxWait, maxStep, targetArea, 
 			waitSleep:= Round(sleepsArray[i])
 			Random, w, waitSleep, waitSleep+1
 			Sleep(Max(Round(abs(w)),1))
-			i++
-			h:= Round(abs(w))
+			i++			
 		}
     }
     endX:= Round(xe)
