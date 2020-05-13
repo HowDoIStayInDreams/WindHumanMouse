@@ -223,9 +223,9 @@ SortArray(Array, Order="A"){
         }
         Partitions := SubStr(Partitions, 1, InStr(Partitions, "|", False, 0)-1)
         if (pivot - spos) > 1    ;if more than one elements
-            Partitions .= "|" spos "," pivot-1        ;the left partition
+            Partitions .= "|" spos "," pivot-1
         if (epos - pivot) > 1    ;if more than one elements
-            Partitions .= "|" pivot+1 "," epos        ;the right partition
+            Partitions .= "|" pivot+1 "," epos
     } Until !Partitions
 }
 goStandard(x, y, speed){
