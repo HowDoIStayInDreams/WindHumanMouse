@@ -8,7 +8,7 @@ SetMouseDelay -1
 ;------------------------------------------------------------------------------------;
 ;  Original script by: Flight in Pascal, link: https://paste.villavu.com/show/3279/  ;
 ;  Modified script with simpler method MoveMouse() by: dexon in C#                   ;
-;  Convertion from C# into AHK by: HowDoIStayInDreams, with the help of Arekusei     ;
+;  Conversion from C# into AHK by: HowDoIStayInDreams, with the help of Arekusei     ;
 ;  Dynamic mouse speed implemented by: HowDoIStayInDreams                            ;
 ;  v1.4 added acceleration and brake, shout-out to kl and Lazy                       ;
 ;------------------------------------------------------------------------------------;
