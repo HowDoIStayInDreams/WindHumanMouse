@@ -237,7 +237,7 @@ goStandard(x, y, speed){
 	Random, finalSpeed, dynamicSpeed, dynamicSpeed + 0.8
 	stepArea:= Max(( finalSpeed / 2 + distance ) / 10, 0.1)
 	newArr:=[]
-	newArr:= WindMouse2(xpos, ypos, x, y, 9, 2, finalSpeed * 10, finalSpeed * 12, stepArea * 11, stepArea * 13)
+	newArr:= WindMouse2(xpos, ypos, x, y, 9, 3, finalSpeed * 10, finalSpeed * 12, stepArea * 11, stepArea * 13)
 	SortArray(newArr, "D")
 	c:= newArr.Count()
 	g:= c/2
@@ -249,7 +249,7 @@ goStandard(x, y, speed){
 	newClone:= newArr.Clone()
 	SortArray(newClone, "A")
 	newArr.Push(newClone*)
-	WindMouse(xpos, ypos, x, y, 9, 2, finalSpeed * 10, finalSpeed * 12, stepArea * 11, stepArea * 13, newArr)
+	WindMouse(xpos, ypos, x, y, 9, 3, finalSpeed * 10, finalSpeed * 12, stepArea * 11, stepArea * 13, newArr)
 	newArr:=[]
 }
 goRelative(x, y, speed){
@@ -259,7 +259,7 @@ goRelative(x, y, speed){
 	Random, finalSpeed, dynamicSpeed, dynamicSpeed + 0.8
 	stepArea:= Max(( finalSpeed / 2 + distance ) / 10, 0.1)
 	newArr:=[]
-	newArr:= WindMouse2(xpos, ypos, xpos+x, ypos+y, 9, 2, finalSpeed * 10, finalSpeed * 12, stepArea * 11, stepArea * 13)
+	newArr:= WindMouse2(xpos, ypos, xpos+x, ypos+y, 9, 3, finalSpeed * 10, finalSpeed * 12, stepArea * 11, stepArea * 13)
 	SortArray(newArr, "D")
 	c:= newArr.Count()
 	g:= c/2
@@ -271,6 +271,6 @@ goRelative(x, y, speed){
 	newClone:= newArr.Clone()
 	SortArray(newClone, "A")
 	newArr.Push(newClone*)
-	WindMouse(xpos, ypos, xpos+x, ypos+y, 9, 2, finalSpeed * 10, finalSpeed * 12, stepArea * 11, stepArea * 13, newArr)
+	WindMouse(xpos, ypos, xpos+x, ypos+y, 9, 3, finalSpeed * 10, finalSpeed * 12, stepArea * 11, stepArea * 13, newArr)
 	newArr:=[]
 }
