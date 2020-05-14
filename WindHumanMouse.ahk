@@ -5,13 +5,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
 SetMouseDelay -1
 ;*************************************************************************************
-;------------------------------------------------------------------------------------;
-;  Original script by: Flight in Pascal, link: https://paste.villavu.com/show/3279/  ;
-;  Modified script with simpler method MoveMouse() by: dexon in C#                   ;
-;  Conversion from C# into AHK by: HowDoIStayInDreams, with the help of Arekusei     ;
-;  Dynamic mouse speed implemented by: HowDoIStayInDreams                            ;
-;  v1.4 added acceleration and brake, shout-out to kl and Lazy                       ;
-;------------------------------------------------------------------------------------;
+;--------------------------------------------------------------------------------;
+;  Original script by: Flight in Pascal					         ;
+;  Link: https://github.com/SRL/SRL/blob/master/shared/mouse.simba               ;
+;  More Flight's mouse moves: https://paste.villavu.com/show/3279/  		 ;
+;  Modified script with simpler method MoveMouse() by: dexon in C#         	 ;
+;  Conversion from C# into AHK by: HowDoIStayInDreams, with the help of Arekusei ;
+;  Dynamic mouse speed implemented by: HowDoIStayInDreams                        ;
+;  v1.4 added acceleration and brake, shout-out to kl and Lazy                   ;  
+;--------------------------------------------------------------------------------;
 MoveMouse(x, y, speed:= 0.57, RD:= ""){
                            ;---------------------------------------------------------;
     ;Random, rxRan,-10,10  ; here you can randomize your destination coordinates     ;
