@@ -19,8 +19,8 @@ Process, Priority,, H
 ;  v1.3 added dynamic mouse speed					 	 ;
 ;  v1.4 added acceleration and brake, shout-out to kl and Lazy			 ;
 ;  v1.5 fixed jiggle at the destination (pointed out by Sound)                   ;
-;	    added smoother sleep function		   			 ;
-; 	    maxStep is now more dynamic, using GlitchedSoul's weighted Random	 ;
+;	added smoother sleep function		   			 	 ;
+; 	maxStep is now more dynamic, using GlitchedSoul's weighted Random	 ;
 ;--------------------------------------------------------------------------------;
 ;*********************************************************************************
 
