@@ -7,20 +7,20 @@ SetMouseDelay -1
 Process, Priority,, H
 ;*********************************************************************************
 ;--------------------------------------------------------------------------------;
-;  v1.5																			 ;
-;  Original script by: Flight in Pascal					                 	     ;
+;  v1.5										 ;
+;  Original script by: Flight in Pascal					         ;
 ;  Link: https://github.com/SRL/SRL/blob/master/shared/mouse.simba               ;
-;  More Flight's mouse moves: https://paste.villavu.com/show/3279/       		 ;
+;  More Flight's mouse moves: https://paste.villavu.com/show/3279/       	 ;
 ;  Modified script with simpler method MoveMouse() by: dexon in C#           	 ;
 ;  Conversion from C# into AHK by: HowDoIStayInDreams, with the help of Arekusei ;
 ;--------------------------------------------------------------------------------;
 ;--------------------------------------------------------------------------------;
-;  Changelog:																     ;
-;  v1.3 added dynamic mouse speed					 							 ;
-;  v1.4 added acceleration and brake, shout-out to kl and Lazy					 ;
+;  Changelog:									 ;
+;  v1.3 added dynamic mouse speed					 	 ;
+;  v1.4 added acceleration and brake, shout-out to kl and Lazy			 ;
 ;  v1.5 fixed jiggle at the destination (pointed out by Sound)                   ;
-;	    added smoother sleep function		   						    		 ;
-; 	    maxStep is now more dynamic, using GlitchedSoul's weighted Random		 ;
+;	    added smoother sleep function		   			 ;
+; 	    maxStep is now more dynamic, using GlitchedSoul's weighted Random	 ;
 ;--------------------------------------------------------------------------------;
 ;*********************************************************************************
 
