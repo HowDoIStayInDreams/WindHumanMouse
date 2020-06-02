@@ -6,7 +6,7 @@
 
 ```autohotkey
 MoveMouse(100, 200)
-MoveMouse(100, 200, 0.6)         0.6 here is optional speed parameter. Default value:= 0.57
+MoveMouse(100, 200, 0.55)        0.55 here is optional speed parameter. Default value:= 0.6
                                  from 0.45 (slow) to 0.7 (fast)
 ```
 
@@ -14,6 +14,6 @@ MoveMouse(100, 200, 0.6)         0.6 here is optional speed parameter. Default v
 
 ```autohotkey
 MoveMouse(100, 200,, "RD")
-MoveMouse(100, 200, 0.6, "RD")   0.6 here is optional speed parameter. Default value:= 0.57
+MoveMouse(100, 200, 0.55, "RD")  0.55 here is optional speed parameter. Default value:= 0.6
                                  from 0.45 (slow) to 0.7 (fast)
 ```
