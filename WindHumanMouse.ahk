@@ -175,11 +175,6 @@ endY:= Round(ye)
     }
 Return newArr
 }
-createArray(arr){
-Loop, % arr.MaxIndex()
-    list2 .= arr[A_Index] . "`n"
-Return list2
-}
 Hypot(dx, dy){
     return Sqrt(dx * dx + dy * dy)
 }
