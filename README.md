@@ -21,4 +21,5 @@ MoveMouse(100, 200, 0.55, "RD")  0.55 here is optional speed parameter. Default 
 
 If mouse moves abnormally fast or slow, try commenting
 SetMouseDelay -1 in WindHumanMouse.ahk
+
 Update AHK to the latest version
